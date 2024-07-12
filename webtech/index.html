@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuition Academy</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="font-awesome">
+    <!-- Navbar -->
+<nav class="bg-blue-600 p-4 text-white">
+    <div class="container mx-auto flex justify-between items-center">
+        <div class="font-bold text-xl">Tuition Academy</div>
+        <div class="hidden md:flex space-x-4">
+            <a href="index.html" class="hover:text-gray-300">Home</a>
+            <a href="about.html" class="hover:text-gray-300">About Us</a>
+            <a href="services.html" class="hover:text-gray-300">Services</a>
+            <a href="contact.html" class="hover:text-gray-300">Contact Us</a>
+        </div>
+        <div class="md:hidden">
+            <button id="nav-toggle" class="focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div id="nav-menu" class="hidden md:hidden bg-blue-700 p-4">
+        <a href="index.html" class="block py-2 px-4 hover:bg-blue-800">Home</a>
+        <a href="about.html" class="block py-2 px-4 hover:bg-blue-800">About Us</a>
+        <a href="services.html" class="block py-2 px-4 hover:bg-blue-800">Services</a>
+        <a href="contact.html" class="block py-2 px-4 hover:bg-blue-800">Contact Us</a>
+    </div>
+</nav>
+
+<!-- JavaScript for Toggle Menu -->
+<script>
+    document.getElementById('nav-toggle').onclick = function () {
+        document.getElementById('nav-menu').classList.toggle('hidden');
+    }
+</script>
+
+    <!-- Hero Section -->
+    <section class="bg-blue-500 text-white text-center py-20">
+        <h1 class="text-4xl font-bold mb-4">Welcome to Tuition Academy</h1>
+        <p class="mb-8">Your success is our mission</p>
+        <a href="contact.html" class="bg-white text-blue-500 px-4 py-2 rounded">Enroll Now</a>
+    </section>
+
+    <!-- Testimonials Carousel -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">What Our Students Say</h2>
+            <div class="flex justify-center space-x-4">
+                <div class="bg-white p-6 rounded shadow-md w-1/3">
+                    <p>"Great experience! Improved my grades significantly!"</p>
+                    <p class="mt-4 text-gray-600">- Student A</p>
+                </div>
+                <div class="bg-white p-6 rounded shadow-md w-1/3">
+                    <p>"Excellent tutors and friendly environment."</p>
+                    <p class="mt-4 text-gray-600">- Student B</p>
+                </div>
+                <div class="bg-white p-6 rounded shadow-md w-1/3">
+                    <p>"Highly recommend for anyone looking to improve academically."</p>
+                    <p class="mt-4 text-gray-600">- Student C</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brief Introduction -->
+    <section class="py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">About Our Academy</h2>
+            <p>We provide top-notch tutoring services to help students excel in their studies. Our experienced tutors and comprehensive curriculum ensure that students achieve their academic goals.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white p-4 text-center">
+        &copy; 2024 Tuition Academy. All rights reserved.
+    </footer>
+</body>
+</html>
+
